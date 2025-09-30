@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-container">
+            <div class="logo">Elite5</div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="student.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="practices.html">Практики</a></li>
+                    <li><a href="goods.html">Товары</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <div class="main-title">Наши контакты</div>
+
+        <div class="contact-card">
+            <h1 class="card-meta">Электронная почта</h1>
+            <div class="span">
+                <span class="card-upper">Адрес электронной почты: astafev@mirea.ru</span>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <h1 class="card-meta">Физический адрес</h1>
+            <div class="span">
+                <span class="card-upper">Адрес: г. Москва, ул. Пушкина, д. Колотушкина</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="student-info">
+            <div class="title-info">Телефон</div>
+            <div class="title-meta">+7 (495) 123-45-67</div>
+        </div>
+
+        <div class="student-info">
+            <div class="title-info">Социальные сети</div>
+            <div class="title-meta">VK, Telegram, WhatsApp</div>
+        </div>
+
+
+        <div class="student-info">
+            <div class="title-info">Время работы</div>
+            <div class="title-meta">+7 (495) 123-45-67</div>
+        </div>
+
+        <!-- Кнопка -->
+        <div class="butten-box">
+            <button class="butten-state" id="openModal">Связаться с нами</button>
+        </div>
+
+        <!-- Модальное окно -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Свяжитесь с нами</h2>
+                <form class="modal-form">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя" required>
+
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+
+                    <label for="email">Почта</label>
+                    <input type="email" id="email" placeholder="example@mail.ru" required>
+
+                    <label for="category">Категория</label>
+                    <select id="category">
+                        <option>Вопрос</option>
+                        <option>Жалоба</option>
+                        <option>Предложение</option>
+                        <option>Другое</option>
+                    </select>
+
+                    <label for="message">Текст обращения</label>
+                    <textarea id="message" rows="4" placeholder="Опишите ваше обращение..." required></textarea>
+
+                    <button type="submit" class="butten-state">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Логотип + описание -->
+            <div class="footer-col">
+                <div class="footer-logo">Elite5</div>
+                <p>Подбор и продажа авто по всей России.
+                    Только проверенные предложения и гарантия качества.</p>
+            </div>
+
+            <!-- Навигация -->
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="student.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="practices.html">Практики</a></li>
+                    <li><a href="goods.html">Товары</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- Контакты -->
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>Email: info@elite5.ru</p>
+                <p>Тел: +7 (900) 123-45-67</p>
+                <div class="socials">
+                    <a href="#">VK</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Elite5. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

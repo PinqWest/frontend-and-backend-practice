@@ -1,0 +1,288 @@
+/* Сброс и базовые стили */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #f1f1f1;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: #070b18;
+
+}
+
+.nav {
+    background-color: #0a0f24;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(46, 137, 229);
+    font-family: "Unbounded", sans-serif;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 16px;
+    color: #f1f1f1;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(46, 137, 229);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(46, 137, 229);
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+
+
+
+.main-title{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.main-title{
+    font-size: 25px;
+}
+.main-title--upper{
+    color: grey;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: #0a0f24;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 16px;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #f1f1f1;
+    font-weight: 600;
+}
+
+.product-card p {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.product-price {
+    font-size: 17px;
+    font-weight: bold;
+    color: #ff4e4e;
+    margin-bottom: 12px;
+}
+
+.product-button {
+    background: linear-gradient(90deg, #2e89e5, #6a5af9);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 0;
+    width: 100%;
+    cursor: pointer;
+    font-size: 13px;
+    transition: opacity 0.3s ease;
+}
+
+.product-button:hover {
+    opacity: 0.85;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: #0a0f24;
+    padding: 50px 20px 20px;
+    margin-top: 60px;
+    color: #ccc;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: rgb(46, 137, 229);
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(46, 137, 229);
+    margin-bottom: 15px;
+    font-family: "Unbounded", sans-serif;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul a:hover {
+    color: rgb(46, 137, 229);
+}
+
+/* Соцсети */
+.socials {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.socials a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: rgb(46, 137, 229);
+}
+
+/* Нижняя часть */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #777;
+}
